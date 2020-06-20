@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edittime"
+    android:orientation="vertical"
+    android:id="@+id/edit_main"
+    android:background="@mipmap/back1"
+    android:paddingTop="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.example.time.BounceScrollView
+        android:id="@+id/BS1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".Edittime">
+
+            <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/showdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start"
+                    android:textColor="#FFFAFA"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/showdate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start"
+                    android:paddingTop="5dp"
+                    android:textColor="#FFFAFA"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/work_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/ic_button2_background"
+                android:fontFamily="sans-serif"
+                android:gravity="start"
+                android:paddingLeft="30dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/work_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/ic_button2_background"
+                android:fontFamily="sans-serif"
+                android:gravity="start"
+                android:paddingLeft="30dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/work_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/ic_button2_background"
+                android:fontFamily="sans-serif"
+                android:gravity="start"
+                android:paddingLeft="30dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/work_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/ic_button2_background"
+                android:fontFamily="sans-serif"
+                android:gravity="start"
+                android:paddingLeft="30dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/work_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/ic_button2_background"
+                android:fontFamily="sans-serif"
+                android:gravity="start"
+                android:paddingLeft="30dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/work_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/ic_button2_background"
+                android:fontFamily="sans-serif"
+                android:gravity="start"
+                android:paddingLeft="30dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/work_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/ic_button2_background"
+                android:fontFamily="sans-serif"
+                android:gravity="start"
+                android:paddingLeft="30dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/work_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/ic_button2_background"
+                android:fontFamily="sans-serif"
+                android:gravity="start"
+                android:paddingLeft="30dp"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </com.example.time.BounceScrollView>
+
+    <com.example.time.AttachButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        app:elevation="6dp"
+        android:clickable="true"
+        app:borderWidth="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/fabbg"
+        app:rippleColor="#B5B5B5"
+        app:pressedTranslationZ="12dp"
+        android:src="@android:drawable/ic_input_add"
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_2"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        android:background="@mipmap/back2"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/BS1"
+        />
+</RelativeLayout>

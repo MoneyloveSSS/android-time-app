@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Main"
+    android:background="@mipmap/back1"
+    android:paddingTop="20dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:id="@+id/TopView"
+        android:textColor="#F8F8FF"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:id="@+id/home_Main"
+        android:paddingTop="50dp">
+
+        <TextView
+            android:id="@+id/time_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/text_view_sytle"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="100sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <TextView
+            android:id="@+id/work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/text_view_sytle"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="50sp"
+            android:fontFamily="sans-serif-light" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        app:itemTextColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation"
+        app:itemIconTint="#FFFFFF"
+        android:background="@mipmap/back2"
+        android:layout_alignParentBottom="true"
+
+        />
+</RelativeLayout>
